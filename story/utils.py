@@ -61,9 +61,6 @@ def player_won(text):
             return True
     return False
 
-def remove_profanity(text):
-    return pf.censor(text)
-
 
 def cut_trailing_quotes(text):
     num_quotes = text.count('"')
