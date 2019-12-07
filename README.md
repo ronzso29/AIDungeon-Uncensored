@@ -1,4 +1,4 @@
-# AIDungeon2
+# AIDungeon2-Uncensored
 
 This is a fork of the original AIDungeon, with the ProfanityFilter features removed. Vanilla AIDungeon scans and censors the output of the game, looking for expletives, sexual content, racial slurs, and others.
 
