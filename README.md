@@ -10,6 +10,8 @@ Quick disclaimer: I have no affiliation with Nick Walton. I made this repo to re
 
 Note: This repo will be kept up-to-date with upstream, minus the ProfanityFilter features.
 
+## [Colab Link](https://colab.research.google.com/drive/1OjBQe4H4C2s-p4-OeJoXw5DStIjPy2VS)
+
 
 ### Original Description
 
