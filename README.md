@@ -7,9 +7,7 @@ This is a fork of the original AIDungeon, with the ProfanityFilter features remo
 Please note: if you are offended at all by the output that is produced, I encourage you to visit the upstream repository instead, and run that repo. I have no control over what is produced, and neither does upstream. You have been warned.
 
 
-
-
-Below is the original summary.
+### Original Description
 
 Read more about AIDungeon2 and how it was built [here](https://pcc.cs.byu.edu/2019/11/21/ai-dungeon-2-creating-infinitely-generated-text-adventures-with-deep-learning-language-models/)
 
