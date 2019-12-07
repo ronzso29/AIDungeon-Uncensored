@@ -2,7 +2,7 @@
 
 This is a fork of the original AIDungeon, with the ProfanityFilter features removed. Vanilla AIDungeon scans and censors the output of the game, looking for expletives, sexual content, racial slurs, and others.
 
-# This fork removes the profanity filter entirely.
+## This fork removes the profanity filter entirely.
 
 Please note: if you are offended at all by the output that is produced, I encourage you to visit the upstream repository instead, and run that repo. I have no control over what is produced, and neither does upstream. You have been warned.
 
