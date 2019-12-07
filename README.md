@@ -4,7 +4,11 @@ This is a fork of the original AIDungeon, with the ProfanityFilter features remo
 
 ## This fork removes the profanity filter entirely.
 
-Please note: if you are offended at all by the output that is produced, I encourage you to visit the upstream repository instead, and run that repo. I have no control over what is produced, and neither does upstream. You have been warned.
+Please note: if you are offended at all by the output that is produced, I encourage you to visit the upstream repository instead, and run that repo. I have no control over what output is produced, and neither does upstream. You have been warned.
+
+Quick disclaimer: I have no affiliation with Nick Walton. I made this repo to remove censorship, and that's it. If you have issues with the game itself, please open an issue on the main repository, as I will be providing no further support for this repo beyond keeping it up-to-date and free of censorship.
+
+Note: This repo will be kept up-to-date with upstream, minus the ProfanityFilter features.
 
 
 ### Original Description
