@@ -5,6 +5,15 @@ from termios import tcflush, TCIFLUSH
 import time, sys, os
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
+def splash():
+    print("0) New Game\n1) Load Game\n")
+    choice = get_num_options(2)
+
+    if choice == 1:
+        return "load"
+    else:
+        return "new"
+
 def select_game():
     with open(YAML_FILE, 'r') as stream:
         data = yaml.safe_load(stream)
@@ -84,12 +93,21 @@ def play_aidungeon_2():
             del story_manager.story
 
         print("\n\n")
-        context, prompt = select_game()
-        console_print(instructions())
-        print("\nGenerating story...")
+        splash_choice = splash()
 
-        story_manager.start_new_story(prompt, context=context, upload_story=upload_story)
+        if splash_choice == "new":
+            print("\n\n")
+            context, prompt = select_game()
+            console_print(instructions())
+            print("\nGenerating story...")
 
+            story_manager.start_new_story(prompt, context=context, upload_story=upload_story)
+
+        else:
+            load_ID = input("What is the ID of the saved game? ")
+            result = story_manager.load_new_story(load_ID)
+            print("\nLoading Game...\n")
+            print(result)
         print("\n")
         console_print(str(story_manager.story))
         while True:
@@ -209,4 +227,3 @@ def play_aidungeon_2():
 
 if __name__ == '__main__':
     play_aidungeon_2()
-
