@@ -159,6 +159,21 @@ class StoryManager():
         self.story = Story(context + story_prompt + block, context=context, game_state=game_state, upload_story=upload_story)
         return self.story
     
+    def load_new_story(self, story_id):
+        file_name = "story" + story_id + ".json"
+        cmd = "gsutil cp gs://aidungeonstories/" + file_name + " ."
+        os.system(cmd)
+        exists = os.path.isfile(file_name)
+
+        if exists:
+            with open(file_name, 'r') as fp:
+                game = json.load(fp)
+            self.story = Story("")
+            self.story.init_from_dict(game)
+            return str(self.story)
+        else:
+            return "Error: save not found."
+    
     def load_story(self, story, from_json=False):
         if from_json:
             self.story = Story("")
