@@ -1,5 +1,7 @@
 # AIDungeon2-Uncensored
 
+# Attention: This uncensored version is now obsolete, as the original author has added a feature that enables the user to disable or enable censorship. As of Tuesday, December 10, 2019, I have stopped work on this fork, and it will no longer be kept up-to-date. Please visit upstream if you want to play the game. I will keep it functional at the very least, but other than that, I'm keeping it up for archival and legacy purposes.
+
 This is a fork of the original AIDungeon 2, with the ProfanityFilter features removed. Vanilla AIDungeon 2 scans and censors the output of the game, looking for expletives, sexual content, racial slurs, and others.
 
 ## This fork removes the profanity filter entirely.
